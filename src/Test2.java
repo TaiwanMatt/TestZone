@@ -28,6 +28,7 @@ public class Test2 {
         client.elementSendText("NATIVE", "xpath=//*[@id='usernameTextField']", 0, "company");
         client.elementSendText("NATIVE", "xpath=//*[@id='passwordTextField']", 0, "company");
         client.click("NATIVE", "xpath=//*[@id='loginButton']", 0, 1);
+        client.sleep(2000);
         client.click("NATIVE", "xpath=//*[@id='logoutButton']", 0, 1);
     }
 
@@ -36,6 +37,7 @@ public class Test2 {
         // Generates a report of the test case.
         // For more information - https://docs.experitest.com/display/public/SA/Report+Of+Executed+Test
 //    	System.out.print(4);
+    	
         client.generateReport(false);
         // Releases the client so that other clients can approach the agent in the near future. 
         client.releaseClient();
