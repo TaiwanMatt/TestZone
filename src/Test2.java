@@ -11,18 +11,15 @@ public class Test2 {
     protected   Client client = null;
     @Before
     public   void setUp(){
-    	System.out.print(1);
-//        client = new Client(host, port, true);
-//        client.setProjectBaseDirectory(projectBaseDirectory);
-//        client.setReporter("xml", "C:\\Users\\VOD-Testing\\Desktop\\Report", "Untitled");
+        client = new Client(host, port, true);
+        client.setProjectBaseDirectory(projectBaseDirectory);
+        client.setReporter("xml", "C:\\Users\\VOD-Testing\\Desktop\\Report", "Untitled");
     }
 
     @Test
     public   void test1(){
-    	client = new Client(host, port, true);
-        client.setProjectBaseDirectory(projectBaseDirectory);
-        client.setReporter("xml", "C:\\Users\\VOD-Testing\\Desktop\\Report", "Untitled");
-        System.out.print(2);
+    	
+        System.out.print(System.getProperty("output"));
         client.setDevice("adb:Olsen");
         client.launch("com.experitest.ExperiBank/.LoginActivity", true, true);
         client.elementSendText("NATIVE", "xpath=//*[@id='usernameTextField']", 0, "company");
