@@ -19,7 +19,7 @@ public class Test2 {
     @Test
     public   void test1(){
     	
-        System.out.print(System.getProperty("output"));
+        System.out.println(System.getProperty("output"));
         client.setDevice("adb:Olsen");
         client.launch("com.experitest.ExperiBank/.LoginActivity", true, true);
         client.elementSendText("NATIVE", "xpath=//*[@id='usernameTextField']", 0, "company");
