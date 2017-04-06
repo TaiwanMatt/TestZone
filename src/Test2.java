@@ -28,7 +28,7 @@ public class Test2 {
         client.click("NATIVE", "xpath=//*[@id='loginButton']", 0, 1);
         client.sleep(2000);
 	client.report("fail", false);
-	client.report(client.capture("Capture"), error, false);
+	client.report(client.capture("Capture"), "error", false);
         client.click("NATIVE", "xpath=//*[@id='logoutButton']", 0, 1);
     }
 
