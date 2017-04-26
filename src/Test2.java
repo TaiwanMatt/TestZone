@@ -31,6 +31,22 @@ public class Test2 {
 	client.report(client.capture("Capture"), "error", false);
         client.click("NATIVE", "xpath=//*[@id='logoutButton']", 0, 1);*/
     }
+    @Test
+    public   void test2(){
+    	
+        System.out.println(System.getProperty("output"));
+       /* client.setDevice("adb:Olsen");
+        client.launch("com.experitest.ExperiBank/.LoginActivity", true, true);
+        client.elementSendText("NATIVE", "xpath=//*[@id='usernameTextField']", 0, "company");
+	client.sleep(2000);
+        client.elementSendText("NATIVE", "xpath=//*[@id='passwordTextField']", 0, "company");
+        client.click("NATIVE", "xpath=//*[@id='loginButton']", 0, 1);
+        client.sleep(2000);
+	client.report("fail", false);
+	client.report(client.capture("Capture"), "error", false);
+        client.click("NATIVE", "xpath=//*[@id='logoutButton']", 0, 1);*/
+    }
+
 
     @After
     public   void tearDown(){
