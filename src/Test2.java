@@ -11,16 +11,16 @@ public class Test2 {
     protected   Client client = null;
     @Before
     public   void setUp(){
-        client = new Client(host, port, true);
+        /*client = new Client(host, port, true);
         client.setProjectBaseDirectory(projectBaseDirectory);
-        client.setReporter("xml", "C:\\Users\\VOD-Testing\\Desktop\\Report", "Untitled");
+        client.setReporter("xml", "C:\\Users\\VOD-Testing\\Desktop\\Report", "Untitled");*/
     }
 
     @Test
     public   void test1(){
     	
         System.out.println(System.getProperty("output"));
-        client.setDevice("adb:Olsen");
+       /* client.setDevice("adb:Olsen");
         client.launch("com.experitest.ExperiBank/.LoginActivity", true, true);
         client.elementSendText("NATIVE", "xpath=//*[@id='usernameTextField']", 0, "company");
 	client.sleep(2000);
@@ -29,7 +29,7 @@ public class Test2 {
         client.sleep(2000);
 	client.report("fail", false);
 	client.report(client.capture("Capture"), "error", false);
-        client.click("NATIVE", "xpath=//*[@id='logoutButton']", 0, 1);
+        client.click("NATIVE", "xpath=//*[@id='logoutButton']", 0, 1);*/
     }
 
     @After
@@ -38,9 +38,9 @@ public class Test2 {
         // For more information - https://docs.experitest.com/display/public/SA/Report+Of+Executed+Test
 //    	System.out.print(4);
     	
-        client.generateReport(false);
+        /*client.generateReport(false);
         // Releases the client so that other clients can approach the agent in the near future. 
-        client.releaseClient();
+        client.releaseClient();*/
 
     }
 }
